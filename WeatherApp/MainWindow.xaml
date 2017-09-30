@@ -1,0 +1,30 @@
+﻿<Window x:Class="WeatherApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherApp"
+        mc:Ignorable="d"
+        Title="Weather App 1.0B" Height="568.518" Width="483.271" Background="AliceBlue">
+    <Grid>
+        <Border CornerRadius="5" BorderThickness="2" BorderBrush="#FF9DBFE0" Margin="13,11,114,480" Background="White">
+            <TextBox Name="textBoxSearch" Background="Transparent" BorderThickness="0" Margin="-1,-2,-2,-2" FontFamily="Verdana" FontSize="16"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Center" Text="Enter zipcode or city, state" GotFocus="textBoxSearch_GotFocus" LostFocus="textBoxSearch_LostFocus" Height="47" VerticalAlignment="Top" HorizontalAlignment="Left" Width="347"/>
+        </Border>
+        <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="366,11,0,0" Height="36" FontFamily="Verdana" FontSize="14" Click="searchButton_Click" RenderTransformOrigin="0.681,0.901" Background="#FF9DBFE0"/>
+        <Image x:Name="imageCondition" HorizontalAlignment="Left" Height="154" VerticalAlignment="Top" Width="176" Margin="13,63,0,0" />
+        <Label x:Name="labelCityNameZip" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.941,1.853" Margin="194,63,0,0" Width="271" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelCityLatLong" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.352,2.784" Margin="10,254,0,0" Width="452" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelWeatherCondition" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,190,0,0" Width="176" FontFamily="Verdana" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.534,-0.667"/>
+        <Label x:Name="labelElevation" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,286,0,0" Width="452" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelLastUpdated" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,318,0,0" Width="452" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelTemperature" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="194,95,0,0" Width="271" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelFeelsLike" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="194,127,0,0" Width="271" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelWind" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,350,0,0" Width="455" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelWindDirection" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,382,0,0" Width="455" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelHumidity" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="194,159,0,0" Width="271" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelVisibility" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,414,0,0" RenderTransformOrigin="0.311,0.898" Width="452" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelUV" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="10.333,9.631" Margin="10,446,0,0" Width="455" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="labelPrecipitation" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,478,0,0" Width="455" FontFamily="Verdana" FontSize="14"/>
+
+    </Grid>
+</Window>
